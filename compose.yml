@@ -1,0 +1,11 @@
+services:
+  flask:
+    build: .
+    container_name: portfolio_container
+    ports:
+      - "5000:5000"
+    volumes:
+      - portfolio_volume:/app/data
+
+volumes:
+  portfolio_volume:
