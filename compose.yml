@@ -2,10 +2,15 @@ services:
   flask:
     build: .
     container_name: portfolio_container
+    networks:
+    - portfolio_network
     ports:
-      - "5000:5000"
+    - "5000:5000"
     volumes:
-      - portfolio_volume:/app/data
+    - portfolio_volume:/app/data
 
+networks:
+  portfolio_network:
+    driver: bridge
 volumes:
   portfolio_volume:
