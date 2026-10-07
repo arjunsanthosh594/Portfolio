@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arjun Santhosh | Software Developer Portfolio</title>
+  <title>Arjun Santhosh | Aspiring DevOps Engineer</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Ambient Glowing Orbs -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <header class="navbar">
     <div class="nav-container">
-      <a href="#hero" class="logo">Arjun<span>.dev</span></a>
+      <a href="#hero" class="logo"><span>Arjun</span></a>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -31,12 +35,15 @@
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
-    <div class="container hero-content">
-      <p class="tagline">Hello, I'm</p>
-      <h1>Arjun Santhosh</h1>
-      <h2 class="subheading">Full-Stack & Backend Developer</h2>
+    <div class="container hero-content reveal">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span>Available for new projects</span>
+      </div>
+      <h1 class="gradient-text">Arjun Santhosh</h1>
+      <h2 class="subheading">DevOps Engineer | Cloud Computing Fresher</h2>
       <p class="bio-lead">
-        I design, build, and deploy reliable web applications and APIs using Python, Flask, Docker, and modern web technologies.
+I automate, deploy, and manage reliable applications and infrastructure using Linux, Docker, CI/CD, Git, and cloud technologies
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -45,26 +52,30 @@
     </div>
   </section>
 
-  <!-- About Section -->
+   <!-- About Section -->
   <section id="about" class="section">
-    <div class="container">
+    <div class="container reveal">
       <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>
-            I am a software engineer focused on building clean, performant backends and practical web services. My primary toolkit revolves around Python, containerized environments, and standards-compliant web interfaces.
-          </p>
-          <p>
-            Whether architecting RESTful services, integrating third-party APIs, or turning concepts into working software, I prioritize clear code structure, testability, and smooth deployment.
-          </p>
-        </div>
+<p>
+  I am a Cloud and DevOps enthusiast focused on building reliable, automated,
+  and scalable application environments. My primary toolkit revolves around
+  Linux, Docker, Git, CI/CD, Bash scripting, and cloud technologies.
+</p>
+
+<p>
+  Whether configuring servers, containerizing applications, automating
+  deployment workflows, or managing cloud infrastructure, I prioritize
+  automation, reliability, security, and efficient application delivery.
+</p>        </div>
         <div class="about-stats">
           <div class="stat-card">
-            <h3>3+</h3>
+            <h3></h3>
             <p>Years of Coding</p>
           </div>
           <div class="stat-card">
-            <h3>15+</h3>
+            <h3>3+</h3>
             <p>Completed Projects</p>
           </div>
           <div class="stat-card">
@@ -76,9 +87,7 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
+    <div class="container reveal">
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
         {% for skill in skills %}
@@ -93,7 +102,7 @@
 
   <!-- Projects Section -->
   <section id="projects" class="section">
-    <div class="container">
+    <div class="container reveal">
       <h2 class="section-title">Featured Projects</h2>
       <div class="projects-grid">
         {% for project in projects %}
@@ -119,19 +128,19 @@
 
   <!-- Contact Section -->
   <section id="contact" class="section section-alt">
-    <div class="container contact-container">
+    <div class="container contact-container reveal">
       <h2 class="section-title">Contact Me</h2>
       <p class="contact-subtitle">Have an opportunity or project in mind? Drop me a message.</p>
       
       <form id="contactForm" class="contact-form">
         <div class="form-group">
           <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required placeholder="Alex Johnson">
+          <input type="text" id="name" name="name" required placeholder="Arjun Santhosh">
         </div>
 
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required placeholder="alex@example.com">
+          <input type="email" id="email" name="email" required placeholder="arjunsanthosh@gmail.com.com">
         </div>
 
         <div class="form-group">
@@ -148,7 +157,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; {{ year }} Arjun Santhosh. Built with Python Flask & Docker.</p>
+      <p>&copy; {{ year }} Arjun Santhosh.</p>
     </div>
   </footer>
 
