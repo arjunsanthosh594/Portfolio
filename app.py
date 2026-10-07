@@ -22,37 +22,30 @@ CONTACT_RECIPIENT_EMAIL = os.environ.get("CONTACT_RECIPIENT_EMAIL")
 PROJECTS = [
     {
         "id": 1,
-        "title": "Cloud Analytics Platform",
-        "description": "Real-time metrics dashboard with automated alerting and data export capabilities.",
-        "tags": ["Python", "Flask", "Docker", "PostgreSQL"],
-        "github": "https://github.com",
+        "title": "Skill Scope AI"
+        "description": "Find Trending Skills and Learning Platform",
+        "tags": ["Flutter", "React", "APIs",],
+        "github": "https://github.com/arjunsanthosh594",
         "demo": "https://example.com"
     },
     {
         "id": 2,
-        "title": "Task Automation API",
-        "description": "RESTful microservice designed to handle asynchronous background jobs and webhooks.",
-        "tags": ["Flask", "Celery", "Redis", "Docker"],
-        "github": "https://github.com",
+        "title": "ResuSure INSIGHT",
+        "description": "Resume Checking and Creation.",
+        "tags": ["JavaScript ", "PHP", "HTML", "CSS"],
+        "github": "https://github.com/arjunsanthosh594",
         "demo": "https://example.com"
     },
-    {
-        "id": 3,
-        "title": "Developer Portfolio",
-        "description": "Responsive personal portfolio showcasing projects, technical skills, and experience.",
-        "tags": ["Python", "Flask", "HTML/CSS", "JavaScript"],
-        "github": "https://github.com",
-        "demo": "https://example.com"
-    }
 ]
 
 SKILLS = [
-    {"name": "Python / Flask", "level": "Advanced"},
-    {"name": "Docker & Containers", "level": "Intermediate"},
+    {"name": "Flutter", "level": "Intermediate"},
+    {"name": "Docker & Containers", "level": "Advanced"},
     {"name": "HTML5 / CSS3 / JavaScript", "level": "Advanced"},
-    {"name": "REST APIs & Microservices", "level": "Advanced"},
-    {"name": "PostgreSQL & SQLite", "level": "Intermediate"},
-    {"name": "Git & CI/CD", "level": "Intermediate"}
+    {"name": "SQL", "level": "Intermediate"},
+    {"name": "Git & CI/CD", "level": "Advanced"},
+    {"name": "Linux & Shell Scripting", "level": "Advanced"}
+
 ]
 
 def send_contact_notification(sender_name: str, sender_email: str, message_body: str) -> None:
