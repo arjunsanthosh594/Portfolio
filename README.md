@@ -1,43 +1,20 @@
-# Personal Portfolio Website
+# Developer Portfolio (Python Flask & Docker)
 
-A personal portfolio web application built using Python Flask, HTML, CSS, and JavaScript. The application is containerized using Docker and managed using Docker Compose.
+A lightweight, responsive personal developer portfolio web application built with Python Flask, Jinja2 templates, standard CSS, JavaScript, and Docker.
 
-## Project Overview
+---
 
-This project is a personal portfolio website that presents my profile, skills, projects, achievements, education, and contact information.
+## Features
 
-The portfolio has been developed using Flask and is deployed inside a Docker container.
+- **Flask Backend:** Dynamic data rendering for projects and skills, with a clean JSON contact endpoint (`/api/contact`).
+- **Responsive Frontend:** Vanilla CSS and modern JavaScript with no heavy front-end build steps or dependencies.
+- **Dockerized:** Ready for instant local development and production container deployment via `Dockerfile` and `docker-compose.yml`.
 
-## Technologies Used
+---
 
-- Ubuntu Linux
-- Python
-- Flask
-- HTML5
-- CSS3
-- JavaScript
-- Docker
-- Docker Compose
-- Docker Volume
-- Git
-- GitHub
+## Local Setup (Without Docker)
 
-## Project Structure
-
-```text
-Portfolio/
-│
-├── app.py
-├── Dockerfile
-├── compose.yml
-├── requirements.txt
-├── README.md
-│
-├── templates/
-│   └── index.html
-│
-└── static/
-    ├── css/
-    │   └── style.css
-    └── js/
-        └── script.js
+1. **Create and activate a virtual environment:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate

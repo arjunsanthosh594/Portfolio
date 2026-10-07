@@ -1,16 +1,14 @@
-services:
-  flask:
-    build: .
-    container_name: portfolio_container
-    networks:
-    - portfolio_network
-    ports:
-    - "5000:5000"
-    volumes:
-    - portfolio_volume:/app/data
+version: '3.8'
 
-networks:
-  portfolio_network:
-    driver: bridge
-volumes:
-  portfolio_volume:
+services:
+  web:
+    build: .
+    container_name: flask_portfolio
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - SECRET_KEY=local-dev-secret-key
+    volumes:
+      - .:/app
+    restart: unless-stopped
