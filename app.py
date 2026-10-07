@@ -18,13 +18,12 @@ SMTP_USER = os.environ.get("SMTP_USER")
 SMTP_PASS = os.environ.get("SMTP_PASS")
 SMTP_USE_TLS = os.environ.get("SMTP_USE_TLS", "true").lower() in ("true", "1", "yes")
 CONTACT_RECIPIENT_EMAIL = os.environ.get("CONTACT_RECIPIENT_EMAIL")
-
 PROJECTS = [
     {
         "id": 1,
-        "title": "Skill Scope AI"
+        "title": "Skill Scope AI",
         "description": "Find Trending Skills and Learning Platform",
-        "tags": ["Flutter", "React", "APIs",],
+        "tags": ["Flutter", "React", "APIs"],
         "github": "https://github.com/arjunsanthosh594",
         "demo": "https://example.com"
     },
@@ -32,10 +31,10 @@ PROJECTS = [
         "id": 2,
         "title": "ResuSure INSIGHT",
         "description": "Resume Checking and Creation.",
-        "tags": ["JavaScript ", "PHP", "HTML", "CSS"],
+        "tags": ["JavaScript", "PHP", "HTML", "CSS"],
         "github": "https://github.com/arjunsanthosh594",
         "demo": "https://example.com"
-    },
+    }
 ]
 
 SKILLS = [
